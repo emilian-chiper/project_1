@@ -57,6 +57,7 @@ button {
   font-size: 16px;
   font-weight: 700;
   color: var(--clr-light-strong);
+  cursor: pointer;
 }
 
 /* STRUCTURAL ELEMENTS */
