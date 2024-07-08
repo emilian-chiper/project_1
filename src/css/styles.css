@@ -50,7 +50,7 @@ h2 {
 }
 
 button {
-  border-style: none;
+  border: none;
   border-radius: 5px;
   padding: 0.5rem 2rem;
   background-color: var(--clr-accent);
@@ -171,10 +171,43 @@ button {
   font-style: italic;
 }
 
-/* body > div.section.__quote-area.__col > div > p:nth-child(2) */
 .__quote-wrapper > p:last-child {
   align-self: flex-end;
   padding-right: 4em;
   font-size: 24px;
   font-weight: 900;
+}
+
+.__call-to-action {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.__call-wrapper {
+  width: 60%;
+  margin: 5rem 0;
+  border-radius: 5px;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--clr-accent);
+  color: var(--clr-light-dim);
+}
+
+.__call-wrapper > * {
+  display: flex;
+}
+
+.__call-text {
+  align-items: baseline;
+}
+
+.__call-text > h2 {
+  font-size: 24px;
+}
+
+.__call-wrapper > button {
+  border: 1px solid var(--clr-light-strong);
+  align-self: center;
 }
