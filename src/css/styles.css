@@ -151,3 +151,30 @@ button {
   padding-top: 0.5rem;
   text-align: center;
 }
+
+.__quote-area {
+  min-width: 100%;
+  padding: 5em 0;
+  background-color: var(--clr-light-dim);
+  line-height: 1.5;
+}
+
+.__quote-wrapper {
+  max-width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__quote-wrapper > p:first-of-type {
+  font-size: 36px;
+  font-style: italic;
+}
+
+/* body > div.section.__quote-area.__col > div > p:nth-child(2) */
+.__quote-wrapper > p:last-child {
+  align-self: flex-end;
+  padding-right: 4em;
+  font-size: 24px;
+  font-weight: 900;
+}
