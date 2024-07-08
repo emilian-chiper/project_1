@@ -19,21 +19,43 @@ body {
   font-size: 18px; /* TODO replace with custom variable */
 }
 
+/* CUSTOM PROPERTIES */
+:root {
+  --clr-dark: #1f2937;
+  --clr-light-strong: #f9faf8;
+  --clr-light-dim: #e5e7eb;
+  --clr-accent: #3882f6;
+  --font-large: 36px;
+  --font-small: 18px;
+}
+
 /* BASE ELEMENTS */
 ul {
   list-style: none;
   display: flex;
+  gap: 2rem;
 }
 
 h1 {
   width: 60%;
   font-size: 48px;
+  font-weight: 900;
+  color: var(--clr-light-strong);
+}
+
+h2 {
+  color: var(--clr-light-strong);
+  font-weight: 900;
 }
 
 button {
+  border-style: none;
   border-radius: 5px;
   padding: 0.5rem 2rem;
+  background-color: var(--clr-accent);
   font-size: 16px;
+  font-weight: 700;
+  color: var(--clr-light-strong);
 }
 
 /* STRUCTURAL ELEMENTS */
@@ -55,6 +77,8 @@ button {
 
 .__header {
   align-self: flex-start;
+  background-color: var(--clr-dark);
+  color: var(--clr-light-dim);
 }
 
 .__nav {
@@ -79,6 +103,7 @@ button {
 .__intro {
   justify-content: space-between;
   align-items: baseline;
+  gap: 1rem;
 }
 
 .__intro > p {
@@ -86,5 +111,6 @@ button {
 }
 
 .__showcase {
-  background-color: bisque; /* TODO replace with custom property */
+  background-color: #79838d;
+  color: var(--clr-light-strong);
 }
