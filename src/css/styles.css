@@ -1,3 +1,15 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --clr-dark: #1f2937;
+  --clr-light-strong: #f9faf8;
+  --clr-light-dim: #e5e7eb;
+  --clr-accent: #3882f6;
+  --font-large: 36px;
+  --font-medium: 24px;
+  --font-small: 18px;
+}
+
+/* GENERAL ELEMENTS */
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +29,7 @@ body {
   align-items: center;
   box-sizing: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px; /* TODO replace with custom variable */
-}
-
-/* CUSTOM PROPERTIES */
-:root {
-  --clr-dark: #1f2937;
-  --clr-light-strong: #f9faf8;
-  --clr-light-dim: #e5e7eb;
-  --clr-accent: #3882f6;
-  --font-large: 36px;
-  --font-small: 18px;
+  font-size: var(--font-small);
 }
 
 /* BASE ELEMENTS */
@@ -35,6 +37,12 @@ ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -85,16 +93,18 @@ button {
 
 .__nav {
   width: 100%;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1em 0 0 0;
 }
 
 .__hero {
-  padding: 5em;
+  padding: 5em 0;
 }
 
 .__hero > * {
+  max-width: 40vw;
   min-height: 10vw;
   display: flex;
   flex: 1 1 0;
@@ -109,7 +119,7 @@ button {
 }
 
 .__intro > p {
-  max-width: 72%;
+  max-width: 85%;
 }
 
 .__showcase {
@@ -124,7 +134,7 @@ button {
 
 .info-header {
   padding-bottom: 1em;
-  font-size: 36px;
+  font-size: var(--font-large);
   font-weight: bold;
   color: var(--clr-dark);
 }
@@ -167,25 +177,25 @@ button {
 }
 
 .__quote-wrapper > p:first-of-type {
-  font-size: 36px;
+  font-size: var(font-large);
   font-style: italic;
 }
 
 .__quote-wrapper > p:last-child {
   align-self: flex-end;
   padding-right: 4em;
-  font-size: 24px;
+  font-size: var(--font-medium);
   font-weight: 900;
 }
 
 .__call-to-action {
-  width: 100%;
+  min-width: 100%;
   justify-content: center;
   align-items: center;
 }
 
 .__call-wrapper {
-  width: 60%;
+  width: 55%;
   margin: 5rem 0;
   border-radius: 5px;
   padding: 2em 0;
@@ -204,7 +214,7 @@ button {
 }
 
 .__call-text > h2 {
-  font-size: 24px;
+  font-size: var(--font-medium);
 }
 
 .__call-wrapper > button {
@@ -214,7 +224,7 @@ button {
 
 .__footer {
   min-width: 100%;
-  padding: 2em 0;
+  padding: 1.5em 0;
   background-color: var(--clr-dark);
   color: var(--clr-light-dim);
 }
