@@ -4,11 +4,87 @@
   box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+
   display: flex;
   align-items: center;
-  box-sizing: border-box;
+  box-sizing: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 18px; /* TODO replace with custom variable */
+}
+
+/* BASE ELEMENTS */
+ul {
+  list-style: none;
+  display: flex;
+}
+
+h1 {
+  width: 60%;
+  font-size: 48px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  font-size: 16px;
+}
+
+/* STRUCTURAL ELEMENTS */
+.section {
+  display: flex;
+}
+
+.__col {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* SECTIONS */
+.__header {
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.__header {
+  align-self: flex-start;
+}
+
+.__nav {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 0 0 0;
+}
+
+.__hero {
+  padding: 5em;
+}
+
+.__hero > * {
+  min-height: 10vw;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.__intro {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.__intro > p {
+  max-width: 72%;
+}
+
+.__showcase {
+  background-color: bisque; /* TODO replace with custom property */
 }
