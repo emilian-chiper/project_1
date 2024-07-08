@@ -211,3 +211,10 @@ button {
   border: 1px solid var(--clr-light-strong);
   align-self: center;
 }
+
+.__footer {
+  min-width: 100%;
+  padding: 2em 0;
+  background-color: var(--clr-dark);
+  color: var(--clr-light-dim);
+}
